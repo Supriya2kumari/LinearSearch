@@ -1,0 +1,40 @@
+// Linear search in java
+
+import java.util.Scanner;
+
+class LinearSearch
+{
+    public static void main(String [] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the length of an array : ");
+        
+        int l = sc.nextInt();
+        
+        int arr[] = new int[l];
+        
+        System.out.println("Enter the element of an array : ");
+        
+       // To get array element
+       
+        for(int i=0;i<l ; i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        
+        System.out.println("Enter the data element present in an array : ");
+        
+        int data = sc.nextInt();
+        
+       //Traverse the loop and search data 
+       
+        for(int i = 0; i < arr.length; i++)
+        {
+            if(arr[i] == data)
+            {
+                System.out.println("data present at index : "+i);
+            }
+        }
+    }
+}
